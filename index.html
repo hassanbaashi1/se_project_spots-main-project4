@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="hassan ali" />
-    <meta name="description" content="???" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Hassan Ali" />
+    <meta
+      name="description"
+      content="Spots social platform to share posts and images"
+    />
+    <meta name="keywords" content="HTML, CSS, social media" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
+      <!-- Header -->
       <header class="header">
         <img src="./images/logo.svg" alt="Spot logo" class="header__logo" />
       </header>
+
+      <!-- Main Content -->
       <main class="content">
+        <!-- Profile Section -->
         <section class="profile page__section">
           <img
             src="./images/avatar.jpg"
@@ -26,13 +33,15 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/pencil.svg" alt="Pencil icon" />Edit profile
+              <img src="./images/pencil.svg" alt="Pencil icon" /> Edit profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/pluse.svg" alt="pluse icon" />New Post
+            <img src="./images/plus.svg" alt="Plus icon" /> New Post
           </button>
         </section>
+
+        <!-- Cards Section -->
         <section class="cards page__section">
           <ul class="cards__list">
             <li class="card">
@@ -43,7 +52,11 @@
               />
               <div class="card__content">
                 <h2 class="card__title">Val Thorens</h2>
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like this card"
+                ></button>
               </div>
             </li>
             <li class="card">
@@ -54,7 +67,11 @@
               />
               <div class="card__content">
                 <h2 class="card__title">Restaurant terrace</h2>
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like this card"
+                ></button>
               </div>
             </li>
             <li class="card">
@@ -65,7 +82,11 @@
               />
               <div class="card__content">
                 <h2 class="card__title">An outdoor cafe</h2>
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like this card"
+                ></button>
               </div>
             </li>
             <li class="card">
@@ -78,7 +99,11 @@
                 <h2 class="card__title">
                   A very long bridge, over the forest...
                 </h2>
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like this card"
+                ></button>
               </div>
             </li>
             <li class="card">
@@ -89,7 +114,11 @@
               />
               <div class="card__content">
                 <h2 class="card__title">Tunnel with morning light</h2>
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like this card"
+                ></button>
               </div>
             </li>
             <li class="card">
@@ -100,19 +129,27 @@
               />
               <div class="card__content">
                 <h2 class="card__title">Mountain house</h2>
-                <button type="button" class="card__like-btn"></button>
+                <button
+                  type="button"
+                  class="card__like-btn"
+                  aria-label="Like this card"
+                ></button>
               </div>
             </li>
           </ul>
         </section>
       </main>
+
+      <!-- Footer -->
       <footer class="footer">
-        <p class="footer__copyright">2024&copy;Spots</p>
+        <p class="footer__copyright">2024 &copy; Spots</p>
       </footer>
+
+      <!-- Edit Profile Modal -->
       <div class="modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn">
-            <img src="./images/Close Icon.svg" alt="close icon" />
+            <img src="./images/Close Icon.svg" alt="Close icon" />
           </button>
           <h2 class="modal__title">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
@@ -138,10 +175,12 @@
           </form>
         </div>
       </div>
+
+      <!-- New Post Modal -->
       <div class="modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn">
-            <img src="./images/Close Icon.svg" alt="close icon" />
+            <img src="./images/Close Icon.svg" alt="Close icon" />
           </button>
           <h2 class="modal__title">New post</h2>
           <form name="new-post" class="modal__form">
