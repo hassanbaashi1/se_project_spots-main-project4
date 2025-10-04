@@ -59,83 +59,7 @@
                 ></button>
               </div>
             </li>
-            <li class="card">
-              <img
-                src="./images/2-photo-by-ceiline-from-pexels.jpg"
-                alt="Restaurant terrace"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Restaurant terrace</h2>
-                <button
-                  type="button"
-                  class="card__like-btn"
-                  aria-label="Like this card"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt="An outdoor cafe"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">An outdoor cafe</h2>
-                <button
-                  type="button"
-                  class="card__like-btn"
-                  aria-label="Like this card"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt="A very long bridge"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">
-                  A very long bridge, over the forest...
-                </h2>
-                <button
-                  type="button"
-                  class="card__like-btn"
-                  aria-label="Like this card"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt="Tunnel"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Tunnel with morning light</h2>
-                <button
-                  type="button"
-                  class="card__like-btn"
-                  aria-label="Like this card"
-                ></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="Mountain house"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Mountain house</h2>
-                <button
-                  type="button"
-                  class="card__like-btn"
-                  aria-label="Like this card"
-                ></button>
-              </div>
-            </li>
+            <!-- More cards... -->
           </ul>
         </section>
       </main>
@@ -144,66 +68,67 @@
       <footer class="footer">
         <p class="footer__copyright">2024 &copy; Spots</p>
       </footer>
-    </div>
-    <!-- Edit Profile Modal -->
-    <div class="modal">
-      <div class="modal__container">
-        <button type="button" class="modal__close-btn">
-          <img src="./images/Close Icon.svg" alt="Close icon" />
-        </button>
-        <h2 class="modal__title">Edit profile</h2>
-        <form name="edit-profile" class="modal__form">
-          <label for="name" class="modal__label">
-            Name
-            <input
-              id="name"
-              type="text"
-              class="modal__input"
-              placeholder="Type your name"
-            />
-          </label>
-          <label for="description" class="modal__label">
-            Description
-            <input
-              id="description"
-              type="text"
-              class="modal__input"
-              placeholder="Describe yourself"
-            />
-          </label>
-          <button type="submit" class="modal__submit-btn">Save</button>
-        </form>
-      </div>
-    </div>
 
-    <!-- New Post Modal -->
-    <div class="modal">
-      <div class="modal__container">
-        <button type="button" class="modal__close-btn">
-          <img src="./images/Close Icon.svg" alt="Close icon" />
-        </button>
-        <h2 class="modal__title">New post</h2>
-        <form name="new-post" class="modal__form">
-          <label for="image-input" class="modal__label">
-            Image link
-            <input
-              id="image-input"
-              type="url"
-              class="modal__input"
-              placeholder="Paste a link to the picture"
-            />
-          </label>
-          <label for="caption" class="modal__label">
-            Caption
-            <input
-              id="caption"
-              type="text"
-              class="modal__input"
-              placeholder="Type your caption"
-            />
-          </label>
-          <button type="submit" class="modal__submit-btn">Save</button>
-        </form>
+      <!-- Edit Profile Modal -->
+      <div class="modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn">
+            <img src="./images/Close Icon.svg" alt="Close icon" />
+          </button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form name="edit-profile" class="modal__form">
+            <label for="name" class="modal__label">
+              Name
+              <input
+                id="name"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
+            </label>
+            <label for="description" class="modal__label">
+              Description
+              <input
+                id="description"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- New Post Modal -->
+      <div class="modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn">
+            <img src="./images/Close Icon.svg" alt="Close icon" />
+          </button>
+          <h2 class="modal__title">New post</h2>
+          <form name="new-post" class="modal__form">
+            <label for="image-input" class="modal__label">
+              Image link
+              <input
+                id="image-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+              />
+            </label>
+            <label for="caption" class="modal__label">
+              Caption
+              <input
+                id="caption"
+                type="text"
+                class="modal__input"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
