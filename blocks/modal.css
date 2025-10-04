@@ -12,6 +12,10 @@
   visibility: hidden;
 }
 
+.modal_is-opened {
+  visibility: visible;
+}
+
 .modal__container {
   background: #fff;
   padding: 32px 50px;
