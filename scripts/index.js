@@ -83,6 +83,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 );
 
 editProfileBtn.addEventListener("click", () => {
+  // Preload current info into input fields
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
   openModal(editProfileModal);
