@@ -109,16 +109,14 @@
   padding: 8px 12px;
   border-radius: 8px;
   margin: 8px 0 0;
-  left: 0;
   top: calc(100% + 10px);
 }
 
 .modal__title {
   margin: 0 0 32px;
   width: 169px;
-  height: 32px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 0;
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -159,8 +157,7 @@
 }
 
 .modal__error {
-  width: 630px;
-  height: 18px;
+  max-width: 100%;
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -229,9 +226,10 @@
     max-width: 40px;
     max-height: 40px;
     top: -41px;
+    right: 0;
   }
 
-  .modal__labal {
+  .modal__label {
     margin-bottom: 24px;
   }
   .modal__submit-btn {

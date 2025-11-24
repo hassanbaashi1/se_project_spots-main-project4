@@ -6,45 +6,43 @@
     <title>Spots</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-
   <body>
     <div class="page">
       <!-- HEADER -->
       <header class="header">
-        <img src="./images/logo.svg" class="header__logo" />
+        <img src="./images/logo.svg" alt="Spots Logo" class="header__logo" />
       </header>
 
       <main class="content">
-        <!-- Profile -->
+        <!-- PROFILE -->
         <section class="profile page__section">
-          <img src="./images/avatar.png" alt="" class="profile__avatar" />
-
+          <img
+            src="./images/avatar.png"
+            alt="User avatar"
+            class="profile__avatar"
+          />
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button class="profile__edit-btn">
-              <img src="./images/pencil.svg" /> Edit profile
+              <img src="./images/pencil.svg" alt="" /> Edit profile
             </button>
           </div>
-
           <button class="profile__add-btn">
-            <img src="./images/plus.svg" /> New Post
+            <img src="./images/plus.svg" alt="" /> New Post
           </button>
         </section>
 
         <!-- CARDS -->
         <section class="cards page__section">
           <ul class="cards__list">
-            <!-- CARD TEMPLATE -->
             <template id="card-template">
               <li class="card">
                 <img src="#" alt="" class="card__image" />
-
                 <button
                   class="card__delete-btn"
                   aria-label="Delete card"
                 ></button>
-
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button class="card__like-btn" aria-label="Like"></button>
@@ -63,28 +61,30 @@
       <!-- EDIT PROFILE MODAL -->
       <div class="modal" id="edit-profile-modal">
         <div class="modal__content">
-          <button class="modal__close-btn">
-            <img src="./images/CloseIcon.svg" />
+          <button class="modal__close-btn" aria-label="Close modal">
+            <img src="./images/CloseIcon.svg" alt="" />
           </button>
-
           <h2 class="modal__title">Edit profile</h2>
-
           <form name="edit-profile" class="modal__form">
             <label class="modal__label">
               Name
-              <input id="profile-name-input" type="text" class="modal__input" />
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                required
+              />
             </label>
-
             <label class="modal__label">
               Description
               <input
                 id="profile-description-input"
                 type="text"
                 class="modal__input"
+                required
               />
             </label>
-
-            <button class="modal__submit-btn">Save</button>
+            <button class="modal__submit-btn" type="submit">Save</button>
           </form>
         </div>
       </div>
@@ -92,24 +92,30 @@
       <!-- NEW POST MODAL -->
       <div class="modal" id="new-post-modal">
         <div class="modal__content">
-          <button class="modal__close-btn">
-            <img src="./images/CloseIcon.svg" />
+          <button class="modal__close-btn" aria-label="Close modal">
+            <img src="./images/CloseIcon.svg" alt="" />
           </button>
-
           <h2 class="modal__title">New post</h2>
-
           <form name="new-post" class="modal__form">
             <label class="modal__label">
               Image link
-              <input id="image-input" type="url" class="modal__input" />
+              <input
+                id="image-input"
+                type="url"
+                class="modal__input"
+                required
+              />
             </label>
-
             <label class="modal__label">
               Caption
-              <input id="caption" type="text" class="modal__input" />
+              <input
+                id="caption-input"
+                type="text"
+                class="modal__input"
+                required
+              />
             </label>
-
-            <button class="modal__submit-btn">Save</button>
+            <button class="modal__submit-btn" type="submit">Save</button>
           </form>
         </div>
       </div>
@@ -117,11 +123,13 @@
       <!-- IMAGE PREVIEW MODAL -->
       <div class="modal" id="preview-modal">
         <div class="modal__content modal__content_type_preview">
-          <button class="modal__close-btn modal__close-btn_type_preview">
-            <img src="./images/CloseIcon.svg" />
+          <button
+            class="modal__close-btn modal__close-btn_type_preview"
+            aria-label="Close image preview"
+          >
+            <img src="./images/CloseIcon.svg" alt="" />
           </button>
-
-          <img class="modal__image" src="#" alt="" />
+          <img class="modal__image" src="" alt="Preview image" />
           <p class="modal__caption"></p>
         </div>
       </div>
